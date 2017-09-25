@@ -6,6 +6,11 @@ var name = 'Tyler';
 
   //Code Here
 
+function isTyler(name) {
+	return name === "Tyler";
+}
+
+
 //////////////////PROBLEM 2////////////////////
 
 
@@ -13,6 +18,11 @@ var name = 'Tyler';
 
 
   //Code Here
+
+function getName() {
+	var userName = prompt("What is your name?");
+	return userName;
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -24,6 +34,9 @@ var name = 'Tyler';
 
   //Code Here
 
+function welcome(func) {
+	alert("Welcome, " + getName());
+}
 
 //////////////////PROBLEM 4////////////////////
 
@@ -33,6 +46,8 @@ var name = 'Tyler';
 //What is the difference between arguments and parameters?
 
   //Answer Here
+
+  // arguements go into parenthesis when yu invoke the function.  parameters are set when creating the function.
 
 
 //////////////////PROBLEM 5////////////////////
@@ -44,6 +59,10 @@ var name = 'Tyler';
 
   //Answer Here
 
+  // falsy values = false, null, undefined, 0, " ", NaN
+
+  // you check if something is falsy by checking if the value equals Boolean.
+
 
 
 //////////////////PROBLEM 6////////////////////
@@ -54,15 +73,22 @@ var name = 'Tyler';
 
   //Code Here
   
+function myName(){
+	return "Chris Yi";
+}
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
 
+var newMyName = function myName(){
+	return "Chris Yi";
+}
+
 //Now alert the result of invoking newMyName
 
-
+alert(newMyName());
 
 //////////////////PROBLEM 7////////////////////
 
@@ -72,8 +98,16 @@ var name = 'Tyler';
 
   //Code Here
 
+  function outerFn() {
+  	return function(){
+  		return "Chris";
+  	}
+  }
+
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
+
+var innerFn = outerFn();
 
 //Now invoke innerFn.
